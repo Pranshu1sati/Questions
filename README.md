@@ -673,4 +673,158 @@
     - **Answer:** `typeof` is used to obtain the type of a variable or expression. It can also be used in type guards and type assertions.
 
 ---
+---
 
+## **React Questions with Answers**
+
+1. **What is React?**
+   - **Answer:** React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components that manage their own state, and it efficiently updates and renders components when data changes.
+
+2. **What is JSX in React?**
+   - **Answer:** JSX (JavaScript XML) is a syntax extension for JavaScript that allows you to write HTML-like code within JavaScript. It is compiled into React elements by tools like Babel.
+
+3. **What is the virtual DOM?**
+   - **Answer:** The virtual DOM is a lightweight representation of the actual DOM in memory. React uses it to optimize the process of updating the UI by only re-rendering components that need to change.
+
+4. **What are components in React?**
+   - **Answer:** Components are the building blocks of a React application. They can be either class-based or functional and allow for the creation of reusable UI elements.
+
+5. **What are props in React?**
+   - **Answer:** Props (short for properties) are used to pass data from a parent component to a child component. They are immutable and allow components to communicate with each other.
+
+6. **What is state in React?**
+   - **Answer:** State is a built-in React object that allows components to manage their own data. Unlike props, state can be changed by the component itself.
+
+7. **What is the difference between props and state?**
+   - **Answer:** Props are immutable and passed from parent to child components, whereas state is mutable and can be modified within a component.
+
+8. **What is a functional component?**
+   - **Answer:** A functional component is a simpler way to define a React component using a JavaScript function. It receives props as arguments and returns JSX.
+
+9. **What is a class component?**
+   - **Answer:** A class component is defined using a JavaScript class that extends `React.Component`. It can have state, lifecycle methods, and more.
+
+10. **What are hooks in React?**
+    - **Answer:** Hooks are functions that allow you to use state and other React features in functional components. Common hooks include `useState`, `useEffect`, and `useContext`.
+
+11. **What is `useState` in React?**
+    - **Answer:** `useState` is a hook that allows you to add state to functional components. It returns a state variable and a function to update that variable.
+
+12. **What is `useEffect` in React?**
+    - **Answer:** `useEffect` is a hook that allows you to perform side effects in functional components, such as fetching data, setting up subscriptions, or manually changing the DOM.
+
+13. **What are lifecycle methods in React?**
+    - **Answer:** Lifecycle methods are special methods in class components that allow you to run code at specific points in a component’s life cycle (e.g., `componentDidMount`, `componentDidUpdate`).
+
+14. **What is the difference between `componentDidMount` and `componentDidUpdate`?**
+    - **Answer:** `componentDidMount` is called after a component is first rendered, while `componentDidUpdate` is called after the component updates due to state or props changes.
+
+15. **What is `ReactDOM.render()`?**
+    - **Answer:** `ReactDOM.render()` is a method that renders a React component to the DOM. It is typically used in the entry point of a React application (like `index.js`).
+
+16. **What is `useContext` in React?**
+    - **Answer:** `useContext` is a hook that allows you to access values from a context provider without having to pass props manually through the component tree.
+
+17. **What is context in React?**
+    - **Answer:** Context provides a way to share values (like themes or user authentication) between components without passing props explicitly at every level.
+
+18. **What is the `key` prop in React?**
+    - **Answer:** The `key` prop is a special prop used to uniquely identify elements in a list. It helps React optimize the rendering process by efficiently updating the list when items change.
+
+19. **What is the purpose of `useRef` in React?**
+    - **Answer:** `useRef` is a hook that allows you to persist a value across renders without causing a re-render. It is often used to reference DOM elements or store mutable values.
+
+20. **What is the difference between `useEffect` and `useLayoutEffect`?**
+    - **Answer:** `useEffect` runs after the DOM has been painted, whereas `useLayoutEffect` runs synchronously after all DOM mutations but before the browser paints the updates.
+
+21. **What is conditional rendering in React?**
+    - **Answer:** Conditional rendering allows you to render different UI elements based on certain conditions, typically using JavaScript logic or conditional operators like `if`, `&&`, or `ternary`.
+
+22. **What is the purpose of the `dangerouslySetInnerHTML` attribute in React?**
+    - **Answer:** `dangerouslySetInnerHTML` is used to insert raw HTML into the DOM, but it should be used cautiously to avoid XSS attacks.
+
+23. **What are controlled components in React?**
+    - **Answer:** Controlled components are form elements whose value is controlled by the state of the component, making React the "single source of truth" for the form data.
+
+24. **What are uncontrolled components in React?**
+    - **Answer:** Uncontrolled components are form elements that maintain their own state, with their values being accessed directly via `refs`.
+
+25. **What is a higher-order component (HOC)?**
+    - **Answer:** A higher-order component is a function that takes a component and returns a new component with additional props or functionality, commonly used for cross-cutting concerns like authentication or data fetching.
+
+26. **What is the `useCallback` hook?**
+    - **Answer:** `useCallback` is a hook that memoizes a function so that it only changes if its dependencies change. It is useful for performance optimization, especially with event handlers.
+
+27. **What is the `useMemo` hook?**
+    - **Answer:** `useMemo` is a hook that memoizes the result of a function so that it is only recalculated when its dependencies change. It helps with performance optimization by avoiding expensive recalculations.
+
+28. **What is `React Router`?**
+    - **Answer:** React Router is a library used to handle navigation and routing in a React application. It allows you to define routes and link to different components based on the URL.
+
+29. **What are fragments in React?**
+    - **Answer:** Fragments are a lightweight way to group multiple elements without adding an extra node to the DOM. You can use `<React.Fragment>` or the shorthand `<>`.
+
+30. **What is `Redux` in React?**
+    - **Answer:** Redux is a state management library used with React to manage global state. It follows a unidirectional data flow and centralizes the application's state in a single store.
+
+31. **What is the `connect` function in Redux?**
+    - **Answer:** The `connect` function is used to connect a React component to the Redux store. It allows the component to access state and dispatch actions.
+
+32. **What is the difference between `useState` and `useReducer` in React?**
+    - **Answer:** `useState` is used for managing simple state, while `useReducer` is used for more complex state logic and is typically used with Redux-style state management.
+
+33. **What are `PropTypes` in React?**
+    - **Answer:** `PropTypes` is a runtime type-checking library used to validate the props passed to a component. It helps ensure that components receive the correct data type.
+
+34. **What is React's `PureComponent`?**
+    - **Answer:** `PureComponent` is a class component that implements a `shouldComponentUpdate` method by performing a shallow comparison of props and state. It can help optimize rendering performance.
+
+35. **What is server-side rendering (SSR) in React?**
+    - **Answer:** Server-side rendering refers to the process of rendering React components on the server before sending the HTML to the browser, improving SEO and initial load performance.
+
+36. **What is React’s Context API?**
+    - **Answer:** The Context API is a way to pass data through the component tree without having to manually pass props at every level.
+
+37. **What is the `React.StrictMode`?**
+    - **Answer:** `React.StrictMode` is a development tool that helps identify potential problems in an application, such as unsafe lifecycle methods or deprecated APIs.
+
+38. **What is JSX spread syntax?**
+    - **Answer:** JSX spread syntax allows you to pass all properties of an object as props to a component. Example: `<Component {...props} />`.
+
+39. **What is the use of `key` in React lists?**
+    - **Answer:** The `key` prop helps React identify which items in a list have changed, been added, or been removed, improving performance during re-renders.
+
+40. **What is the `useLayoutEffect` hook used for?**
+    - **Answer:** `useLayoutEffect` is used to perform DOM mutations synchronously before the browser has painted, ensuring that the DOM updates before rendering the UI.
+
+41. **How do you handle form submission in React?**
+    - **Answer:** In React, you can handle form submission by using controlled components, defining an `onSubmit` event handler, and preventing the default form behavior using `e.preventDefault()`.
+
+42. **What is React's `Suspense`?**
+    - **Answer:** `Suspense` is a component that allows you to wait for asynchronous operations (such as lazy-loaded components) to complete before rendering.
+
+43. **What is the difference between `setState()` and `forceUpdate()`?**
+    - **Answer:** `setState()` schedules a re-render and updates the component's state, while `forceUpdate()` forces a re-render without changing the state.
+
+44. **How can you implement lazy loading in React?**
+    - **Answer:** Lazy loading in React can be implemented using `React.lazy()` and `Suspense` to load components only when they are needed.
+
+45. **What is `shouldComponentUpdate()` in React?**
+    - **Answer:** `shouldComponentUpdate()` is a lifecycle method that determines if a component should re-render based on changes in props or state.
+
+46. **What is a render prop in React?**
+    - **Answer:** A render prop is a function prop that a component uses to know what to render. It allows sharing code between components by passing the function that returns JSX.
+
+47. **What is a custom hook in React?**
+    - **Answer:** A custom hook is a JavaScript function that uses built-in hooks like `useState` or `useEffect` to encapsulate and reuse logic across multiple components.
+
+48. **What is the difference between React and React Native?**
+    - **Answer:** React is a JavaScript library for building web UIs, while React Native is a framework for building mobile applications using React and native components.
+
+49. **What is React's `useImperativeHandle` hook?**
+    - **Answer:** `useImperativeHandle` is a hook that allows you to customize the values exposed by a ref when it is accessed by the parent component.
+
+50. **What are controlled vs. uncontrolled components?**
+    - **Answer:** Controlled components rely on React's state to manage form elements, while uncontrolled components manage their own internal state, often using refs.
+
+---
